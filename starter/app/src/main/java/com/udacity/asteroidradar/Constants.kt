@@ -7,6 +7,7 @@ object Constants {
     const val API_QUERY_DATE_FORMAT = "YYYY-MM-dd"
     const val DEFAULT_END_DATE_DAYS = 7
     const val BASE_URL = "https://api.nasa.gov/"
+    const val MY_API_KEY=""// please go to https://api.nasa.gov/ and generate your own key
 }
      object Dates{
         fun convertDateStringToFormattedString(date: Date, format: String, locale: Locale = Locale.getDefault()) : String {

@@ -26,14 +26,14 @@ private val retrofit= Retrofit.Builder().
 
 interface AsteroidJson
 {// start_date=2015-09-07&end_date=2015-09-08&
-@GET("neo/rest/v1/feed?api_key=EJS3dp5eH9qySXtohgs4ex5a4bFePstS4BtO3Vfi")
+@GET("neo/rest/v1/feed?api_key="+Constants.MY_API_KEY)
 suspend fun getAsteroid():String
 
 }
 
 interface ImageOfTheDay
 {// start_date=2015-09-07&end_date=2015-09-08&
-    @GET("planetary/apod?api_key=EJS3dp5eH9qySXtohgs4ex5a4bFePstS4BtO3Vfi")
+    @GET("planetary/apod?api_key="+Constants.MY_API_KEY)
     suspend fun getImage():ImageNetwork
 
 }
